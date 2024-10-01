@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Twitter Trend Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; }
+        .trend { margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; }
+        .filter-btn { margin: 5px; padding: 5px; cursor: pointer; }
+        canvas { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Trending Crypto Topics</h1>
+    <div>
+        <button class="filter-btn" data-filter="current">Currently Trending</button>
+        <button class="filter-btn" data-filter="24hours">Past 24 Hours</button>
+        <button class="filter-btn" data-filter="week">Last Week</button>
+    </div>
+    <div id="trends"></div>
+    <canvas id="trendChart" width="400" height="200"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
